@@ -10,6 +10,9 @@ chrome.runtime.onStartup.addListener(function () {
 });
 
 
-chrome.browserAction.onClicked.addListener(run = () => {
-    console.log("LOLS");
-});
+const sum = () => {
+    console.log("something");
+}
+
+chrome.browserAction.onClicked.addListener(sum);
+
