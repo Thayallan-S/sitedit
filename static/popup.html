@@ -1,32 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <title>Sitedit</title>
-    <link rel="stylesheet" href="popup.css" />
-</head>
-<body>
-  <div class="app">
-    <p class="counter-label">Counter</p>
-    <div id="counter" class="counter"></div>
-    <div class="button-container">
-      <button id="decrementBtn" class="button">-</button>
-      <button id="incrementBtn" class="button">+</button>
-    </div>
-
-    <hr class="divider" />
-
-    <p class="title">Chrome Extension is Ready!</p>
-    <p class="subtitle">Start by updating <code>popup.html</code></p>
-  </div>
-
+  <title>Title</title>
+  <link rel="stylesheet" href="popup.css" />
+  <script src="../lib/jquery-3.4.1.min.js"></script>
   <script src="popup.js"></script>
 
-  <!--
-    This HTML file opens when you click on icon from the toolbar.
+</head>
 
-    To begin the development, run `npm run watch`.
-    To create a production bundle, use `npm run build`.
-  -->
+<body>
+  <div class="app">
+    <h1 class="title">Sitedit</h1>
+    <hr class="divider" />
+    <div class="button-container">
+      <button id="editBtn" class="button">Edit</button>
+    </div>
+    <div class="button-container">
+      <button id="saveBtn" class="button">Save</button>
+    </div>
+  </div>
 </body>
+
 </html>
